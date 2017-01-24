@@ -8,28 +8,28 @@ namespace CScharfAbgabe1
 {   [Serializable()]
     public class Spieler
     {   [System.Xml.Serialization.XmlElement("Name")]
-        public String name { get; set; }
+        public string name { get; set; }
         [System.Xml.Serialization.XmlElement("Vorname")]
-        public String vorname { get; set;}
+        public string vorname { get; set;}
         [System.Xml.Serialization.XmlElement("Position")]
-        public String position { get; set;}
+        public string position { get; set;}
         [System.Xml.Serialization.XmlElement("Rueckennummer")]
-        public int nummer { get; set;}
+        public string nummer { get; set;}
         [System.Xml.Serialization.XmlElement("Seit")]
-        public int seit { get; set; }
+        public string seit { get; set; }
         [System.Xml.Serialization.XmlElement("GeburtsDatum")]
-        public String bDay { get; set; }
+        public string bDay { get; set; }
         [System.Xml.Serialization.XmlElement("GroesseInCm")]
-        public int height { get; set; }
+        public string height { get; set; }
         [System.Xml.Serialization.XmlElement("GewichtInKg")]
-        public int weight { get; set; }
+        public string weight { get; set; }
         [System.Xml.Serialization.XmlElement("SpieleInBundesliga")]
-        public int gamesPlayed { get; set; }
+        public string gamesPlayed { get; set; }
         [System.Xml.Serialization.XmlElement("ToreInBundesliga")]
-        public int goalsShot { get; set; }
+        public string goalsShot { get; set; }
         [System.Xml.Serialization.XmlElement("Nation")]
-        public String nation { get; set; }
+        public string nation { get; set; }
         [System.Xml.Serialization.XmlElement("Laenderspiele")]
-        public int landGames { get; set; }
+        public string landGames { get; set; }
     }
 }

@@ -67,6 +67,7 @@
             this.playerNameCB.Name = "playerNameCB";
             this.playerNameCB.Size = new System.Drawing.Size(214, 21);
             this.playerNameCB.TabIndex = 0;
+            this.playerNameCB.SelectedIndexChanged += new System.EventHandler(this.playerNameCB_SelectedIndexChanged);
             // 
             // playerPicPB
             // 
@@ -280,6 +281,7 @@
             this.firstBTN.Size = new System.Drawing.Size(51, 43);
             this.firstBTN.TabIndex = 25;
             this.firstBTN.UseVisualStyleBackColor = true;
+            this.firstBTN.Click += new System.EventHandler(this.firstCLCK);
             // 
             // prevBTN
             // 
@@ -289,7 +291,7 @@
             this.prevBTN.Size = new System.Drawing.Size(46, 43);
             this.prevBTN.TabIndex = 26;
             this.prevBTN.UseVisualStyleBackColor = true;
-            this.prevBTN.Click += new System.EventHandler(this.button2_Click);
+            this.prevBTN.Click += new System.EventHandler(this.prevCLCK);
             // 
             // nextBTN
             // 
@@ -299,6 +301,7 @@
             this.nextBTN.Size = new System.Drawing.Size(48, 43);
             this.nextBTN.TabIndex = 27;
             this.nextBTN.UseVisualStyleBackColor = true;
+            this.nextBTN.Click += new System.EventHandler(this.nextCLCK);
             // 
             // lastBTN
             // 
@@ -308,6 +311,7 @@
             this.lastBTN.Size = new System.Drawing.Size(51, 43);
             this.lastBTN.TabIndex = 28;
             this.lastBTN.UseVisualStyleBackColor = true;
+            this.lastBTN.Click += new System.EventHandler(this.lastCLCK);
             // 
             // Form1
             // 
