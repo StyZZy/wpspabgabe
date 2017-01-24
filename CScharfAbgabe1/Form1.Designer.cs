@@ -53,10 +53,10 @@
             this.nationTB = new System.Windows.Forms.TextBox();
             this.landGTB = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.firstBTN = new System.Windows.Forms.Button();
+            this.prevBTN = new System.Windows.Forms.Button();
+            this.nextBTN = new System.Windows.Forms.Button();
+            this.lastBTN = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.playerPicPB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,6 +177,7 @@
             // 
             // nameTB
             // 
+            this.nameTB.Enabled = false;
             this.nameTB.Location = new System.Drawing.Point(598, 51);
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(100, 20);
@@ -184,6 +185,7 @@
             // 
             // surNameTB
             // 
+            this.surNameTB.Enabled = false;
             this.surNameTB.Location = new System.Drawing.Point(598, 74);
             this.surNameTB.Name = "surNameTB";
             this.surNameTB.Size = new System.Drawing.Size(100, 20);
@@ -191,6 +193,7 @@
             // 
             // posTB
             // 
+            this.posTB.Enabled = false;
             this.posTB.Location = new System.Drawing.Point(598, 97);
             this.posTB.Name = "posTB";
             this.posTB.Size = new System.Drawing.Size(100, 20);
@@ -198,6 +201,7 @@
             // 
             // numbTB
             // 
+            this.numbTB.Enabled = false;
             this.numbTB.Location = new System.Drawing.Point(598, 121);
             this.numbTB.Name = "numbTB";
             this.numbTB.Size = new System.Drawing.Size(100, 20);
@@ -205,6 +209,7 @@
             // 
             // sinceTB
             // 
+            this.sinceTB.Enabled = false;
             this.sinceTB.Location = new System.Drawing.Point(598, 146);
             this.sinceTB.Name = "sinceTB";
             this.sinceTB.Size = new System.Drawing.Size(100, 20);
@@ -212,6 +217,7 @@
             // 
             // bDayTB
             // 
+            this.bDayTB.Enabled = false;
             this.bDayTB.Location = new System.Drawing.Point(598, 171);
             this.bDayTB.Name = "bDayTB";
             this.bDayTB.Size = new System.Drawing.Size(100, 20);
@@ -219,6 +225,7 @@
             // 
             // heightTB
             // 
+            this.heightTB.Enabled = false;
             this.heightTB.Location = new System.Drawing.Point(598, 194);
             this.heightTB.Name = "heightTB";
             this.heightTB.Size = new System.Drawing.Size(100, 20);
@@ -226,6 +233,7 @@
             // 
             // weightTB
             // 
+            this.weightTB.Enabled = false;
             this.weightTB.Location = new System.Drawing.Point(598, 219);
             this.weightTB.Name = "weightTB";
             this.weightTB.Size = new System.Drawing.Size(100, 20);
@@ -233,6 +241,7 @@
             // 
             // ggTB
             // 
+            this.ggTB.Enabled = false;
             this.ggTB.Location = new System.Drawing.Point(598, 242);
             this.ggTB.Name = "ggTB";
             this.ggTB.Size = new System.Drawing.Size(100, 20);
@@ -240,6 +249,7 @@
             // 
             // nationTB
             // 
+            this.nationTB.Enabled = false;
             this.nationTB.Location = new System.Drawing.Point(598, 264);
             this.nationTB.Name = "nationTB";
             this.nationTB.Size = new System.Drawing.Size(100, 20);
@@ -247,6 +257,7 @@
             // 
             // landGTB
             // 
+            this.landGTB.Enabled = false;
             this.landGTB.Location = new System.Drawing.Point(598, 286);
             this.landGTB.Name = "landGTB";
             this.landGTB.Size = new System.Drawing.Size(100, 20);
@@ -261,52 +272,52 @@
             this.label12.TabIndex = 24;
             this.label12.Text = "VfB Stuttgart";
             // 
-            // button1
+            // firstBTN
             // 
-            this.button1.Image = global::CScharfAbgabe1.Properties.Resources.resultset_first;
-            this.button1.Location = new System.Drawing.Point(12, 300);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(51, 43);
-            this.button1.TabIndex = 25;
-            this.button1.UseVisualStyleBackColor = true;
+            this.firstBTN.Image = global::CScharfAbgabe1.Properties.Resources.resultset_first;
+            this.firstBTN.Location = new System.Drawing.Point(12, 300);
+            this.firstBTN.Name = "firstBTN";
+            this.firstBTN.Size = new System.Drawing.Size(51, 43);
+            this.firstBTN.TabIndex = 25;
+            this.firstBTN.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // prevBTN
             // 
-            this.button2.Image = global::CScharfAbgabe1.Properties.Resources.resultset_previous;
-            this.button2.Location = new System.Drawing.Point(69, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(46, 43);
-            this.button2.TabIndex = 26;
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.prevBTN.Image = global::CScharfAbgabe1.Properties.Resources.resultset_previous;
+            this.prevBTN.Location = new System.Drawing.Point(69, 300);
+            this.prevBTN.Name = "prevBTN";
+            this.prevBTN.Size = new System.Drawing.Size(46, 43);
+            this.prevBTN.TabIndex = 26;
+            this.prevBTN.UseVisualStyleBackColor = true;
+            this.prevBTN.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // nextBTN
             // 
-            this.button3.Image = global::CScharfAbgabe1.Properties.Resources.resultset_next;
-            this.button3.Location = new System.Drawing.Point(121, 300);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(48, 43);
-            this.button3.TabIndex = 27;
-            this.button3.UseVisualStyleBackColor = true;
+            this.nextBTN.Image = global::CScharfAbgabe1.Properties.Resources.resultset_next;
+            this.nextBTN.Location = new System.Drawing.Point(121, 300);
+            this.nextBTN.Name = "nextBTN";
+            this.nextBTN.Size = new System.Drawing.Size(48, 43);
+            this.nextBTN.TabIndex = 27;
+            this.nextBTN.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // lastBTN
             // 
-            this.button4.Image = global::CScharfAbgabe1.Properties.Resources.resultset_last;
-            this.button4.Location = new System.Drawing.Point(175, 300);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(51, 43);
-            this.button4.TabIndex = 28;
-            this.button4.UseVisualStyleBackColor = true;
+            this.lastBTN.Image = global::CScharfAbgabe1.Properties.Resources.resultset_last;
+            this.lastBTN.Location = new System.Drawing.Point(175, 300);
+            this.lastBTN.Name = "lastBTN";
+            this.lastBTN.Size = new System.Drawing.Size(51, 43);
+            this.lastBTN.TabIndex = 28;
+            this.lastBTN.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(814, 378);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(817, 368);
+            this.Controls.Add(this.lastBTN);
+            this.Controls.Add(this.nextBTN);
+            this.Controls.Add(this.prevBTN);
+            this.Controls.Add(this.firstBTN);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.landGTB);
             this.Controls.Add(this.nationTB);
@@ -332,6 +343,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.playerPicPB);
             this.Controls.Add(this.playerNameCB);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Meine Fußball-Mannschaft";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -368,10 +380,10 @@
         private System.Windows.Forms.TextBox nationTB;
         private System.Windows.Forms.TextBox landGTB;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button firstBTN;
+        private System.Windows.Forms.Button prevBTN;
+        private System.Windows.Forms.Button nextBTN;
+        private System.Windows.Forms.Button lastBTN;
     }
 }
 

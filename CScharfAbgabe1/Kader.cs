@@ -3,23 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace CScharfAbgabe1
-{
-    class Kader
+{   [Serializable()]
+    [System.Xml.Serialization.XmlRoot("Kader")]
+    public class Kader
     {
-        private List<Spieler> spielerListe;
-        public List<Spieler> Liste
-        {
-            get
-            {
-                return spielerListe;
-            }
-            set
-            {
-                spielerListe = value;
-            }
+        [XmlArray("SpielerListe")]
+        [XmlArrayItem("Spieler",typeof(Spieler))]
+        public Spieler[] Spieler { get; set; }
+        public List<Spieler> spielerListe;
 
-        }
+        
     }
 }

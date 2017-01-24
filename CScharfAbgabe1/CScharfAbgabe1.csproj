@@ -87,7 +87,7 @@
     <None Include="Resources\resultset_next.png" />
     <None Include="Resources\resultset_last.png" />
     <None Include="Resources\resultset_first.png" />
-    <Content Include="SpielerData.xml" />
+    <Content Include="Resources\SpielerData.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
